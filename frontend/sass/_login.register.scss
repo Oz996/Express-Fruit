@@ -1,0 +1,150 @@
+@import './colors';
+
+.connect-div{
+    position: absolute;
+    right: 800px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .login-options{
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        .express-header{
+            font-size: 4.8rem;
+            font-weight: 500;
+        }
+        span{
+            color: $express-blue;
+        }
+        p{
+            font-size: 2.4rem;
+            span{
+                color:$express-orange;
+            }
+        }
+        .user-div{
+            margin-top: 5rem;
+            display: flex;
+            gap: 1.3rem;
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 2rem;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            i{
+                font-size: 2.2rem;
+            }
+        }
+
+    }
+
+    .logins{
+        margin-top: 25px;
+    }
+
+    .login, .register {
+        background: rgb(209, 208, 208);
+        border-radius: 40px;
+        padding: 1.5rem 3rem;
+        text-decoration: none;
+        color: black;
+        font-size: 2.4rem;
+    }
+    
+    .login{
+        border-radius: 0px 4rem 4rem 0px;
+
+    }
+    .login:hover{
+        background: $express-blue;
+        color: #fff;
+        transition: .3s;
+    }
+    
+    .register{
+        border-radius: 4rem 0px 0px 4rem;
+    }
+    .register:hover{
+        background-color: $express-orange;
+        color: #fff;
+        transition: .3s;
+    }
+    #password, #email, #r-email, #l-email, #l-password{
+        border-radius: 2rem;
+        padding: .4rem;
+        margin-block: 8px;
+        border: 1px solid grey;
+
+        &:focus{
+            outline: none;
+            border-color: $express-blue;
+        }
+ 
+    }
+
+    #email, #r-email, #l-email{
+        margin-left: 5rem;
+    }
+    #password, #l-password{
+        margin-left: 1.6rem;
+    }
+    label{
+        font-size: 1.8rem;
+        
+    }
+
+
+    #registerForm, #recoverForm, #loginForm{
+        
+        width: 30rem;
+        padding: 2rem;
+        padding-bottom: 4rem;
+        border-radius: 2rem;
+        background: #fff;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+        button, a{
+            border-radius: 4rem;
+            border: none;
+            background-color: $express-blue;
+            color: #fff;
+            padding: .8rem 2rem;
+            font-size: 1.5rem;
+            display: block;
+            cursor: pointer;
+            margin-top: 2rem;
+        }
+        button:hover{
+            background: $express-blue-hover;
+        }
+        .log-buttons{
+            display: flex;
+            gap: 2rem;
+        }
+        a{
+            background: none;
+            color: black;
+            text-decoration: underline;
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: $express-blue-hover;
+            margin-block: 1rem;
+            margin-bottom: 1.7rem;
+        }
+    }
+    h3{
+        font-size: 2.4rem;
+    }

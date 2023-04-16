@@ -1,0 +1,91 @@
+@import './colors';
+
+nav {
+    max-width: 85%;
+
+    a{
+        text-decoration: none;
+        color: black;
+        position: relative;
+        
+        &:hover{
+            color:$express-blue;
+        }
+        &:not(:hover){
+            transition-delay: .27s;
+        }
+    }
+    a::before{
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: $express-blue ;
+        transition: width 0.3s;
+    }
+    a:hover::before{
+        width: 50%;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 6.3rem;
+        font-size: 2.5rem;
+        justify-content: flex-end;
+
+    }
+    
+    li{
+        text-transform: uppercase;
+    }
+}
+
+
+
+.ware-containers{
+    display: flex;
+    gap: 8.4rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.container{
+    border: 1px solid black;
+    width: 33%;
+    border-radius: 4rem;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+
+
+    h1{
+        font-size: 4rem ;
+    }
+    .h-fruits{
+        margin-top: 3rem;
+    }
+    .fruit-div{
+        display: flex;
+        flex-direction: column;
+    }
+    #fruits{
+        display: flex;
+        flex-direction: row;
+        background-color: red;
+    }
+}
+.veg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        color: $express-orange;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}

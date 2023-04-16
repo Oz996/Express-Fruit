@@ -1,0 +1,234 @@
+.connect-div {
+  position: absolute;
+  right: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-options {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.login-options .express-header {
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+.login-options span {
+  color: #108dd6;
+}
+.login-options p {
+  font-size: 2.4rem;
+}
+.login-options p span {
+  color: #EF8626;
+}
+.login-options .user-div {
+  margin-top: 5rem;
+  display: flex;
+  gap: 1.3rem;
+}
+.login-options .user-div a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+.login-options .user-div a:hover {
+  text-decoration: underline;
+}
+.login-options .user-div i {
+  font-size: 2.2rem;
+}
+
+.logins {
+  margin-top: 25px;
+}
+
+.login, .register {
+  background: rgb(209, 208, 208);
+  border-radius: 40px;
+  padding: 1.5rem 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 2.4rem;
+}
+
+.login {
+  border-radius: 0px 4rem 4rem 0px;
+}
+
+.login:hover {
+  background: #108dd6;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.register {
+  border-radius: 4rem 0px 0px 4rem;
+}
+
+.register:hover {
+  background-color: #EF8626;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#password, #email, #r-email, #l-email, #l-password {
+  border-radius: 2rem;
+  padding: 0.4rem;
+  margin-block: 8px;
+  border: 1px solid grey;
+}
+#password:focus, #email:focus, #r-email:focus, #l-email:focus, #l-password:focus {
+  outline: none;
+  border-color: #108dd6;
+}
+
+#email, #r-email, #l-email {
+  margin-left: 5rem;
+}
+
+#password, #l-password {
+  margin-left: 1.6rem;
+}
+
+label {
+  font-size: 1.8rem;
+}
+
+#registerForm, #recoverForm, #loginForm {
+  width: 30rem;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  border-radius: 2rem;
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#registerForm button, #registerForm a, #recoverForm button, #recoverForm a, #loginForm button, #loginForm a {
+  border-radius: 4rem;
+  border: none;
+  background-color: #108dd6;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  display: block;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+#registerForm button:hover, #recoverForm button:hover, #loginForm button:hover {
+  background: #1179b6;
+}
+#registerForm .log-buttons, #recoverForm .log-buttons, #loginForm .log-buttons {
+  display: flex;
+  gap: 2rem;
+}
+#registerForm a, #recoverForm a, #loginForm a {
+  background: none;
+  color: black;
+  text-decoration: underline;
+}
+#registerForm p, #recoverForm p, #loginForm p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1179b6;
+  margin-block: 1rem;
+  margin-bottom: 1.7rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+nav {
+  max-width: 85%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+nav a:hover {
+  color: #108dd6;
+}
+nav a:not(:hover) {
+  transition-delay: 0.27s;
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #108dd6;
+  transition: width 0.3s;
+}
+nav a:hover::before {
+  width: 50%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 6.3rem;
+  font-size: 2.5rem;
+  justify-content: flex-end;
+}
+nav li {
+  text-transform: uppercase;
+}
+
+.ware-containers {
+  display: flex;
+  gap: 8.4rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.container {
+  border: 1px solid black;
+  width: 33%;
+  border-radius: 4rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.container h1 {
+  font-size: 4rem;
+}
+.container .h-fruits {
+  margin-top: 3rem;
+}
+.container .fruit-div {
+  display: flex;
+  flex-direction: column;
+}
+.container #fruits {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+}
+
+.veg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.veg p {
+  color: #EF8626;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}/*# sourceMappingURL=style.css.map */
